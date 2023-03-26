@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #0f8b8d;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+header {
+  background-image: url("assets/Coffe Header.png");
+  background-size: cover;
+  color: #f9fbfe;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.filter {
+  background: rgba(20, 54, 66, 0.7);
+}
+
+a {
+  text-decoration: none;
+  color: #f9fbfe;
+}
+
+.container {
+  padding: 30px 0;
+  margin: 0 5%;
+  max-width: 1366px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 60%;
+}
+
+.navbar-item a {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.hero {
+  width: 40%;
+  margin: 15% auto;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 56px;
+  text-align: center;
+  color: #f9fbfe;
+}
+
+.hero p {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.pt-8 {
+  padding-top: 8%;
+}
+
+.content-item {
+  max-width: 1024px;
+  width: 70%;
+  display: flex;
+  padding: 8% 0;
+  margin: 0 auto;
+}
+
+.content-img {
+  width: 50%;
+}
+
+.content-img img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.isi-content {
+  width: 50%;
+}
+
+.content-title {
+  margin: 0;
+  color: #0f8b8d;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #ec9a29;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+.isi-content p {
+  width: 100%;
+  font-size: 24px;
+  text-align: justify;
+  margin: 5% 0;
+  line-height: 40px;
+}
+
+.right {
+  text-align: right;
+}
+
+.btn {
+  background-color: #a8201a;
+  color: #f9fbfe;
+  border: 0;
+  padding: 20px 40px;
+  border-radius: 55px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.row img {
+  width: 30%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.contact p {
+  margin: 3% 0;
+  line-height: 40px;
+}
+
+footer {
+  display: flex;
+  background-color: #143642;
+  padding: 3% 5%;
+  justify-content: space-between;
+}
+
+footer ul li {
+  margin-bottom: 25px;
+}
+
+.footer-left img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.head-link {
+  color: #ec9a29;
+}
+
+i {
+  color: #f9fbfe;
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#menu-header {
+  background-color: #0f8b8d;
+  background-image: none;
+}
+
+#menu-main {
+  margin: 0 10%;
+}
+
+#menu-main h2 {
+  margin-top: 5%;
+}
+
+#menu-main p {
+  padding-top: 5%;
+}
+
+.section-title {
+  color: #0f8b8d;
+  font-size: 40px;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.product-item {
+  background-image: url("assets/Coffee background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 5% 5%;
+  flex: 0 0 21%;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.product-item:hover > img {
+  transform: translateY(-70%) scale(1.1);
+  transition: transform 0.5s;
+}
+
+.product-item:hover > p {
+  transform: translateY(300%) scale(1.2);
+  transition: transform 0.5s;
+}
+
+.product-item img {
+  width: 200px;
+}
+.product-item p {
+  padding: 10px 0;
+  color: #f9fbfe;
+}
+
+.product-detail {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+}
+.product-detail h2,
+.product-desc h2 {
+  font-size: 32px;
+  margin: 0;
+}
+.product-detail h3 {
+  font-size: 40px;
+}
+.product-image img {
+  width: 100%;
+}
+.product-desc {
+  padding: 0 10%;
+  margin-bottom: 5%;
+}
+.product-desc p,
+.product-detail p {
+  padding: 2% 0;
+  line-height: 30px;
+}
+.product-desc button {
+  font-size: 20px;
+}
+
+.find-us-container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  align-items: center;
+}
+.find-us-content h3 {
+  color: #143642;
+}
+.find-us-content p {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.find-us-card {
+  border: 1px solid #c2c2c2;
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.find-us-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.find-us-image img {
+  width: 70%;
+}
+
+#contact {
+  margin: 3% 20%;
+}
+
+.contact-container {
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  text-align: left;
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c2c2c2;
+  border-radius: 20px;
+  padding: 3% 7%;
+  width: 100%;
+}
+
+.contact-input {
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.contact-input label {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+#label-message-input {
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.contact-input input,
+.contact-input textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c2c2c2;
+  font-family: "Montserrat";
+  width: 100%;
+}
+
+.btn-submit {
+  font-size: 16px;
+  padding: 2% 5%;
+  margin: 2% 0;
+}
+
+.even.reveal {
+  transform: translateX(200px);
+}
+
+.reveal {
+  position: relative;
+  transform: translateX(-200px);
+  opacity: 0;
+}
+
+.vertical.reveal {
+  transform: translateY(200px);
+}
+
+.reveal.active {
+  transform: translateY(0px) translateX(0px);
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-item {
+    margin-top: 5%;
+  }
+  .hero {
+    width: 80%;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+  .content-item {
+    flex-direction: column;
+  }
+  .even {
+    flex-direction: column-reverse;
+  }
+  .isi-content {
+    width: 100%;
+  }
+  .content-title {
+    font-size: 25px;
+  }
+  .content-img {
+    margin-bottom: 10%;
+  }
+  .isi-content p,
+  .contact p {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer ul li a {
+    margin-left: 10%;
+  }
+  .head-link {
+    margin: 0;
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  #menu-main p {
+    font-size: 16px;
+  }
+  .product-item {
+    width: 40%;
+    height: auto;
+  }
+  .product-item p {
+    font-size: 14px;
+  }
+  .product-item img {
+    width: 150px;
+  }
+  .find-us-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 10% 17%;
+  }
+  .find-us-image {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .find-us-image img {
+    width: 100%;
+  }
+  .find-us-card {
+    width: 100%;
+  }
+  #contact {
+    margin: 10% 12%;
+  }
+  .contact-input {
+    flex-direction: column;
+  }
+  .contact-input label {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  #label-message-input {
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+  .btn-submit {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+  .product-detail h2,
+  .product-desc h2 {
+    font-size: 20px;
+  }
+  .product-detail h3 {
+    font-size: 24px;
+  }
+  .product-desc p,
+  .product-detail p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .product-desc button {
+    font-size: 14px;
+  }
+}
